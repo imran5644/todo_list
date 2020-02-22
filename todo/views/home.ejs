@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+         <%= title %>
+        </title>
+        <link rel="stylesheet" href="/css/todo.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <div id="todo">
+            <div class="container">
+                <div class="header">
+                        <h1> TODO App </h1>
+                </div>
+
+
+
+<form action ='/create' method="POST">
+           
+    <div id="description">
+            
+        <h3>DESCRIPTION</h3>
+               <textarea id="fname" name="description" onfocus="myFunction(this.id)" onblur="blurFunction(this.id)" placeholder="What do you need to do?"></textarea>
+           </div>
+
+           <div class="row">
+           <div class="category ">
+            <h3>Category</h3>
+               <select name="category" id="fdropdown" onfocus="myFunction(this.id)" onblur="blurFunction(this.id)" > 
+                   <option>Choose a category</option>
+                   <option>Personal</option>
+                   <option>Work</option>
+                   <option>School</option>
+                   <option>Cleaning</option>
+                   <option>Other</option>
+               </select>
+               
+        </div>
+
+        <div class="date-format">
+                <h3>Due Date</h3>
+                <input type="date" name="dueDate" id="fdate" onfocus="myFunction(this.id)" onblur="blurFunction(this.id)"/>
+        </div>
+    </div>
+  
+    <div class="add-button">
+        <button type="submit"><i class="fa fa-plus" aria-hidden="true"></i> <span>ADD TASK</span></button> 
+      </div>
+        </form>
+
+     
+        
+
+
+        <form action="/delete" method="POST">
+            <div class="delete-button">
+              <button type="submit"><i class="fa fa-trash" aria-hidden="true"></i> <span>DELETE TASKS</span></button> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul>
+            <% for(let i of todo_list){ %> 
+                <li class="horrizontal">
+                    <div class = "todo-list-detail">
+                    <input class="item_checkbox" type="checkbox" name="listItem" value="<%= i._id %>">
+                            <p class="description_todo"> <%= i.description %></p>
+                            <p class="category_todo"> <%= i.category %></p> 
+                            <i class="fa fa-calendar" aria-hidden="true"></i><p class="dueDate_todo"> <%= i.dueDate %></p> 
+                    </div>
+                    </li>
+            <% }  %>
+       </ul> 
+    
+   </form>
+</div>
+</div>  
+      <script src ="/js/todo.js" ></script>
+    </body>
+</html>

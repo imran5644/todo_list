@@ -1,0 +1,203 @@
+body{
+    margin: 0px;
+    background-color: grey;
+}
+
+ /* Whole div container */
+#todo{
+    margin-left: 300px;
+}   
+ 
+.container{
+    background: white;
+    width:700px;
+    height: 800px;
+} 
+
+ /* form height */
+form{
+    height: 250px;
+}
+ /* Header class  */
+.header h1{
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px;
+    height: 30px;
+    color: grey;
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+/* To set the top margin of the created list */
+.horrizontal{
+    margin-top: -15px;
+}
+/* To set the description  */
+#description{
+    margin-top: -20px;
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+    margin-bottom: 14px;
+    border: 2px solid;
+}
+/* To set the description  header*/
+#description h3{
+   margin-left: 25px;
+   margin-top: 10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* To set the description textarea */
+#description textarea{
+outline: none;
+height: 48px;
+width: 94%;
+margin-top:-15px;
+margin-left: 25px;
+border:none
+}
+
+/* Row class to set the dropdownlist and due date in same row */
+.row{
+    margin-top: -16px;
+    width: 99.2%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* category class for dropdown  */
+.category {
+    color: grey;
+    width: 50%;
+    border: 1px solid; 
+} 
+/* category class for dropdown header */
+.category h3 { 
+    margin-left: 25px;
+    margin-top: 10px;
+}
+/* category select  for dropdown list*/
+.category select {
+    margin-left: 25px;
+    margin-top: -4px;
+    width: 320px;
+    height: 45px;
+    outline: none;
+    border: none;
+}
+
+/* date-format class for date setting  */
+.date-format {
+    color: grey; 
+    border: 1px solid;
+    width: 49.4%;
+    height: 92px;
+}
+/* date-format class for date header setting  */
+.date-format h3 {
+    margin-left: 25px;
+    margin-top: 10px;
+} 
+/* date-format class for date input setting  */
+.date-format input {
+    margin-left: 25px;
+    margin-top: -8px;
+    border:none;
+    width:300px;
+    outline: none;
+    height: 50px;
+}  
+/* Add class to set the button */
+.add-button button{
+    background-color: rgb(39, 37, 37);
+    color: white;
+    margin-left: 200px;
+    margin-top: 45px;
+    height: 50px;
+    width: 140px;
+    font-size: 15px;
+}
+/* Add class to set the button icon */
+.add-button i {
+    margin-left: -5px;
+}
+
+.add-button span{
+    margin-left: 15px;
+}
+/* Delete class to set the button */
+.delete-button button{
+    background-color:rgb(206, 42, 42);
+    color: white;
+    margin-left: 400px;
+    margin-top: -20px;
+    height: 54px;
+    width: 180px;
+    font-size: 15px;
+}
+/* Add class to set the button icon */
+.delete-button i {
+    margin-left: -5px;
+}
+.delete-button span{
+    margin-left: 15px;
+}
+
+/* unordered list */
+ul{
+    list-style: none; 
+}
+.horrizontal{
+    height: 70px;
+    border: 1px solid grey;
+    width:96%;
+    margin-bottom: 14px;
+}
+/* List detail class */
+.todo-list-detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:40%;  
+}
+/* List detail class  with input*/
+.todo-list-detail input {
+    margin-top:10px;
+}
+/* List detail class with description*/
+.todo-list-detail .description_todo{
+    margin-top:6px;
+    margin-left: 10px;
+}
+/* List detail class with category */
+.todo-list-detail .category_todo{
+    margin-top:-20px;
+    margin-left:420px;
+    border: 2px solid;
+    padding-top: 6px;
+    padding-left:10px;
+    padding-right: 10px;
+    height: 30px;
+    background: purple;
+    color: white;
+}
+/* List detail class with icon */
+.todo-list-detail i{
+    margin-left: 34px;
+    margin-top: -40px;
+}
+/* List detail class  with date*/
+.todo-list-detail .dueDate_todo{
+    margin-left:16px;
+    margin-top:-40px;
+}
+
+
+
+
+
+
+
+
+
